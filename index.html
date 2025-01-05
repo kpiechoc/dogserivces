@@ -55,6 +55,22 @@
             max-width: 800px;
             margin: 0 auto;
         }
+        .about-section {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        .about-section img {
+            max-width: 200px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .about-text {
+            flex: 1;
+        }
+        .why-choose {
+            margin-top: 20px;
+        }
         .pricing-table {
             width: 100%;
             border-collapse: collapse;
@@ -73,27 +89,10 @@
             padding: 10px;
             background-color: #f7c7da;
             color: #333;
-            position: relative;
         }
-        .contact-form {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            max-width: 500px;
-            margin: 0 auto;
-        }
-        .contact-form input, .contact-form textarea, .contact-form button {
-            padding: 10px;
-            font-size: 1em;
-        }
-        .contact-form button {
-            background-color: #f76ca3;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        .contact-form button:hover {
-            background-color: #e55c94;
+        .contact-info {
+            margin-top: 20px;
+            text-align: center;
         }
         .image-section {
             text-align: center;
@@ -105,41 +104,9 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        .resized-image1 {
-        width: 80%;
-        height: auto;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
         .resized-image {
-        width: 80%;
-        height: auto;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .resized-image3 {
-        width: 80%;
-        height: auto;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .resized-image1 {
-        width: 80%;
-        height: auto;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .resized-image2 {
-        width: 120%;
-        height: auto;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .resized-image3 {
-        width: 120%;
-        height: auto;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 20%;
+            height: 20%;
         }
     </style>
 </head>
@@ -158,36 +125,47 @@
     <div class="banner">
         <h2>Welcome to Maja's Dog Walking Services</h2>
         <p>Caring for your furry friends with love and responsibility.</p>
-        <div class="image-section">
-            <img src="https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9" alt="Dog walking outdoors" class="resized-image1">
-        </div>
+        <img src="https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9" alt="Dog Walking" class="resized-image">
     </div>
 
     <section id="about" class="section">
-        <h2>About Me</h2>
-        <p>Hi, I'm Maja! I'm 13 years old and passionate about helping dogs stay happy, healthy, and active. I have three wonderful dogs and love spending time with them. I aim to provide the best care for your furry friends!</p>
-        </br></br></br></br></br>
-        <div class="image-section">
-            <img src="https://medallioncorp.com/wp-content/uploads/2022/06/Best-Toronto-Dog-Walking-Services.png" alt="Maja with her dogs" 
-        style="transform: scale(3); transform-origin: center;">
+        <div class="about-section">
+            <img src="C:\Git Repos\dogserivces\maja.jpeg" alt="Maja's Picture">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>Hi, I'm Maja! I'm 13 years old, currently in 8th grade, and attend McMillan Junior High School. I have three wonderful dogs that I love taking care of, cuddling with, and spending time with. I've always been passionate about dogs and enjoy helping them stay happy, healthy, and active.</p>
+                <div class="why-choose">
+                    <h3>Why Choose Me?</h3>
+                    <ul>
+                        <li><strong>Responsibility:</strong> Pet owners can trust me to be on time and take good care of their dogs.</li>
+                        <li><strong>Experience:</strong> I currently have 3 dogs and have cared for others in the past, so I have great experience with older and younger dogs.</li>
+                        <li><strong>Fitness:</strong> I did gymnastics for 8 years, and now I do volleyball and dance, showing I have the energy and strength to care for your dog.</li>
+                        <li><strong>Genuine Love for Dogs:</strong> I treat every dog as if they were my own, ensuring they feel happy and cared for.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
-</br></br></br></br>
+
+    <div class="image-section" style="margin-top: 70px; margin-bottom: 40px;">
+        <img src="https://medallioncorp.com/wp-content/uploads/2022/06/Best-Toronto-Dog-Walking-Services.png" 
+             alt="Dogs playing in a park" 
+             style="transform: scale(1.5); transform-origin: center;">
+    </div>
+
     <section id="services" class="section">
-        <h2>Services Offered</h2>
-        <ul>
-            <li>Dog walking: 10, 15, or 20 minutes</li>
-            <li>Additional feeding and water duties</li>
-            <li>Care for multiple dogs</li>
-        </ul>
-        </br></br></br></br></br>
-<div class="image-section">
-    <img src="https://cdn.shopify.com/s/files/1/0576/9399/5050/files/American-Lab-and-British-Lab-standing-paw-to-paw-like-heavyweight-champs.png?v=1699267666" 
-         alt="Dogs playing in a park" 
-         style="transform: scale(3); transform-origin: center;">
-</div>
+        <h2>What Am I Doing This For?</h2>
+        <p>I'm trying to get into side hustles to hopefully make some extra money to buy myself a couch for my room and other decoration items because I've been wanting to redecorate!</p>
+        <h3>Additional</h3>
+        <p>In addition to walking, I can assist with feeding, giving them water, or other light pet care duties while you're away.</p>
     </section>
-</br></br>
+
+    <div class="image-section" style="margin-top: 70px; margin-bottom: 20px;">
+        <img src="https://cdn.shopify.com/s/files/1/0576/9399/5050/files/American-Lab-and-British-Lab-standing-paw-to-paw-like-heavyweight-champs.png?v=1699267666" 
+             alt="Dogs playing in a park" 
+             style="transform: scale(1.5); transform-origin: center;">
+    </div>
+
     <section id="pricing" class="section">
         <h2>Pricing</h2>
         <table class="pricing-table">
@@ -211,20 +189,22 @@
                     <td>$15</td>
                 </tr>
                 <tr>
-                    <td>Additional Dog</td>
+                    <td>Additional Dogs</td>
                     <td>+$5</td>
                 </tr>
                 <tr>
-                    <td>Feeding/Water</td>
+                    <td>Additional Feeding/Water</td>
                     <td>+$4</td>
                 </tr>
             </tbody>
         </table>
     </section>
+
     <section id="contact" class="section">
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeD055HrcdXS3ay9cXlqJbhM2rZcoShz0RHVT4Bs32Hx63gqA/viewform?embedded=true" 
-    width="640" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>    
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeD055HrcdXS3ay9cXlqJbhM2rZcoShz0RHVT4Bs32Hx63gqA/viewform?embedded=true" 
+                width="640" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>    
     </section>
+
     <footer>
         <p>&copy; 2025 Maja's Dog Walking Services. All rights reserved.</p>
     </footer>
