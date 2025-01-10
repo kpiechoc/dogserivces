@@ -126,7 +126,7 @@ iframe {
     border: none;
     width: 100%;
     max-width: 640px;
-    height: 1100px;
+    height: 1200px;
 }
 
 @media (max-width: 768px) {
