@@ -4,16 +4,19 @@ body {
     padding: 0;
     color: #333;
 }
+
 header {
     background-color: #f7c7da;
     padding: 20px;
     text-align: center;
 }
+
 header h1 {
     margin: 0;
     font-size: 2.5em;
     color: #333;
 }
+
 nav {
     display: flex;
     justify-content: center;
@@ -21,85 +24,140 @@ nav {
     border-bottom: 1px solid #ddd;
     padding: 10px 0;
 }
+
 nav a {
     margin: 0 15px;
     text-decoration: none;
     color: #333;
     font-weight: bold;
 }
+
 nav a:hover {
     color: #f76ca3;
 }
+
 .banner {
     text-align: center;
     background-color: #ffe6f2;
     padding: 50px 20px;
 }
+
 .banner h2 {
     font-size: 2em;
     margin-bottom: 10px;
 }
+
 .banner p {
     font-size: 1.2em;
     color: #555;
 }
+
+.banner-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .section {
     padding: 20px;
     max-width: 800px;
     margin: 0 auto;
 }
+
 .about-section {
     display: flex;
     align-items: flex-start;
     gap: 20px;
-    flex-wrap: wrap;
 }
-.about-section img {
-    max-width: 100%;
+
+.about-image {
+    max-width: 200px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 .about-text {
     flex: 1;
 }
+
 .why-choose {
     margin-top: 20px;
 }
+
 .pricing-table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
 }
+
 .pricing-table th, .pricing-table td {
     border: 1px solid #ddd;
     padding: 10px;
     text-align: center;
 }
+
 .pricing-table th {
     background-color: #f7c7da;
 }
+
+.image-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.park-image, .champ-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 footer {
     text-align: center;
     padding: 10px;
     background-color: #f7c7da;
     color: #333;
 }
-.contact-info {
-    margin-top: 20px;
-    text-align: center;
-}
-.image-section {
-    text-align: center;
-    margin: 20px 0;
-}
-.image-section img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-.resized-image {
+
+iframe {
+    display: block;
+    margin: 0 auto;
+    border: none;
     width: 100%;
-    max-width: 300px;
-    height: auto;
+    max-width: 640px;
+    height: 1100px;
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-image {
+        max-width: 150px;
+    }
+
+    .banner-image, .park-image, .champ-image {
+        max-width: 80%;
+    }
+
+    iframe {
+        height: 700px;
+    }
+}
+
+@media (min-width: 769px) {
+    .banner-image {
+        max-width: 20%;
+    }
+
+    .park-image {
+        max-width: 30%;
+    }
+
+    .champ-image {
+        max-width: 30%;
+    }
 }
